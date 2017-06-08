@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Counter</h1>
+    {{session['count']}} times
+
+    <form action='/button' method='post'>
+        <input type="hidden" name="action" value="twotimes">
+        <input type='submit' value='Count times 2'>
+    </form>
+    <form action='/button' method='post'>
+        <input type="hidden" name="action" value="reset">
+        <input type='submit' value='Reset Count'>
+    </form>
+    
+</body>
